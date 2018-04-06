@@ -13,14 +13,14 @@ Section 1.1
 1. Search online for two computing-related fields named “computational X” other
    than the ones listed in Figure 1-1.
 
-    * Computational Toxicology and Computational Meotorology are two
-      interdiscplinary job titles that caught my interest.
+    * Computational Toxicology and Computational Meteorology are two
+      interdisciplinary job titles that caught my interest.
 
 
 2. Search online for two areas of computer science other than those given in
    the chapter.
 
-    * Computational complexity theory, which is the study of how computationaly
+    * Computational complexity theory, which is the study of how computationally
       expensive it is to solve a problem, is one. Another area is cryptography,
       the study of how to share secrets in a confidential manner.
 
@@ -186,7 +186,7 @@ Section 1.1
 
          There are two solutions of the same length. (Note: Dijkstra, a
          preeminenet computer scientest, talks about this problem `here
-         <http://www.cs.utexas.edu/users/EWD/videos/EWD4.mpg>`_. `local 
+         <http://www.cs.utexas.edu/users/EWD/videos/EWD4.mpg>`_. `local
          copy <./EWD4.mpg>`_)
 
 
@@ -297,7 +297,7 @@ Section 1.3
     steps.*
 
     * No, that's a waste of time. Computer Science is about reducing tedium.
-      It's sufficent to know that you multiply the digits by their respective
+      It's sufficient to know that you multiply the digits by their respective
       place values. See "decimal_to_binary.py" for more. Here's the output::
 
         (a.)   5    = 101
@@ -339,7 +339,7 @@ Section 1.3
 
     * From https://en.wikipedia.org/wiki/Transistor_count: As of 2016, the largest
       transistor count in a commercially available single-chip processor is over
-      7.2 billion—the Intel Broadwell-EP Xeon. (Ok, it's 2017, but I couldn't find
+      7.2 billion—the Intel Broadwell-EP Xeon. (OK, it's 2017, but I couldn't find
       anything more recent.)
     * ``n = 7.2 * 10 ** 9``
     * ``k = 8``
@@ -391,7 +391,7 @@ Section 1.4
 17. Give one benefit of the use of a compiler, and one benefit of the use of an
     interpreter.
 
-    * A complier creates object code which can be executed quickly by the cpu.
+    * A compiler creates object code which can be executed quickly by the cpu.
       Much faster than an interpreter. An interpreter allows faster
       troubleshooting, since you can observe the effects of changes to source
       code without recompiling. You can also run in interactive mode, which
@@ -493,4 +493,3 @@ Section 1.6
         print('You are', age, 'years old')
 
     * It would be: "You are 24 years old".
-

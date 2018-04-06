@@ -289,9 +289,7 @@ Section 2.4
     a. ``var1 + var2 * var3`` -- Take your pick. If any of these are floats,
         the rest will be typecasted to a float.
 
-    b. ``var1 // var2 + var3`` -- Var3 should be passed to float. 
+    b. ``var1 // var2 + var3`` -- Var3 should be passed to float.
 
     c. ``var1 // var2 / var3`` -- No call to float necessary here. Division `/`
         always returns a float.
-
-

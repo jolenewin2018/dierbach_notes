@@ -9,7 +9,7 @@
 # connection speed, go to the following website (from Intel Corporation) or
 # similar site,
 #
-# www.intel.com/content/www/us/en/gamers/broadband-speed-test.html Because
+# www.intel.com/content/www/us/en/gamers/broadband-speed-test.html
 #
 # Connection speeds can vary, so run this connection speed test three times.
 # Take the average of three results, and use that as the connection speed to
@@ -21,6 +21,11 @@ Input:
     * File size to download
     * The approximate throughput of the machine's connection from a speedtest
         site. Unit/Second.
+    * Size of all words ever spoken
+    +---------------+---------+-------------------------------------+----------------------------------------------------+↲
+    |   Exabyte     | 10**18  |    1,000,000,000,000,000,000        |    All words ever spoken (5EB)                     |↲
+    |   Exbibyte    |  2**60  |    1,152,921,504,606,849,976        |                                                    |↲
+    +---------------+---------+-------------------------------------+----------------------------------------------------+↲
 Processing:
 >>>
 Output:

@@ -11,7 +11,7 @@ Fundamental Concepts
 10.1 What Is Object-Oriented Programming?
 -----------------------------------------
 * The use of objects in and of itself does not constitute object-oriented
-  programming. Having language features that facilitate modelling problems
+  programming. Having language features that facilitate modeling problems
   with objects in an intuitive way are needed, too. It should be easy to reason
   about things as objects, and easy to write them, too. That means no wierd or
   hard to type syntax. Features such as programming constructs (class
@@ -41,10 +41,10 @@ Fundamental Concepts
 10.2.1 What Is Encapsulation
 ----------------------------
 * Encapsulation is a means of bundling together instance variables and methods
-  to form a given type, as well as a way of restricting access to certian class
+  to form a given type, as well as a way of restricting access to certain class
   members.
 * Private class member names begin with double underscores.
-* All private class members are automatically renamed to begin with a single 
+* All private class members are automatically renamed to begin with a single
   underscore followed by the class name. This practice is known as name
   mangling, and is a form of information hiding.
 * Name mangling is used to discourage direct or unintentional manipulation of
@@ -86,8 +86,8 @@ Adding Arithmetic Operators to the Fraction Class
 
 10.5.1 What Is UML?
 -------------------
-* UML ("Unified Modelling Language") is a standardized language-independent,
-  graphical modelling language for specifying an object-oriented design.
+* UML ("Unified Modeling Language") is a standardized language-independent,
+  graphical modeling language for specifying an object-oriented design.
 
 
 10.5.2 UML Class Diagrams
@@ -116,22 +116,22 @@ The Representation of Classes
 * Visibility of members ... ``-`` means private, ``+`` means public.
 * Arguments within the methods parenthesis denote the return values of the
   methods, not formal parameters.
-* Initilization methods like pythons ``__init__`` are named ``create()`` in UML.
+* Initialization methods like pythons ``__init__`` are named ``create()`` in UML.
 
 Denoting Associations Between Classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 * An **association** between two classes, denoted by a connecting solid line and
   possible arrow head, indicates that methods of one class call methods of
   another.
-* The line can have a number in superscrip over either end. This is called the
-  **multiplicty**, and denotes how many instances each object correspond to each
+* The line can have a number in superscript over either end. This is called the
+  **multiplicity**, and denotes how many instances each object correspond to each
   other. (One to one, one to may, etc.)
 * A **role name,** which shows up as subscript under the connecting line, is used
   to describe the association between the two classes. What the association
   does.
 * The direction the arrow points denotes it's **navigability**, or the direction
   in which methods calls are made.
-* Here's what that might look like:  
+* Here's what that might look like:
 
     |              (multiplicity: 1 instance maps to 0 or more)
     |  +----------------+                                 +------------------+
@@ -151,9 +151,9 @@ Denoting Subclass Relationships
     |   +----------------+
     |   | Shape          |
     |   | {abstract}     | <-- Parent/Super Class
-    |   |                | 
-    |   +----------------+ 
-    |           △          <-- Closed arrow head can be thought 
+    |   |                |
+    |   +----------------+
+    |           △          <-- Closed arrow head can be thought
     |           |              of as representing "is a subclass
     |           |              of" or "is a type of".
     |           |
@@ -234,4 +234,3 @@ Self-Test Questions
 
     a. A “part of” relationship
     **b.** A grouping of objects
-

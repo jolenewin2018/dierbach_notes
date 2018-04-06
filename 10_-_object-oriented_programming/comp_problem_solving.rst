@@ -14,10 +14,9 @@ Computational Problem Solving
 
 10.6.1 The Problem
 ------------------
-* Develop a program apaable of maintaining reservations for a vehivle rental
+* Develop a program capable of maintaining reservations for a vehicle rental
   agency.
 * The agency rents out:
     * Cars
     * Vans
     * Moving Trucks
-

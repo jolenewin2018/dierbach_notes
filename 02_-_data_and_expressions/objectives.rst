@@ -16,6 +16,6 @@ Objectives
 * Describe and use operator precedence and operator associativity.
 * Define a data type, and explain type coercion vs. type conversion.
 * Explain the difference between static and dynamic typing.
-* Effectively use arithemetic expressions in Python.
+* Effectively use arithmetic expressions in Python.
 * Write a simple straight-line Python program.
 * Explain the importance and use of test cases in program testing.

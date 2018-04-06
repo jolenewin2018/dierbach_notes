@@ -29,12 +29,12 @@ Fundamental Concepts
 
 Self-Test Questions
 ^^^^^^^^^^^^^^^^^^^
-1. A good definition of computer science is “the science of programming 
+1. A good definition of computer science is “the science of programming
    computers.”
 
 (TRUE/**FALSE**)
 
-2. Which of the following areas of study are included within the field of 
+2. Which of the following areas of study are included within the field of
    computer science?
 
     a. Software engineering
@@ -128,7 +128,7 @@ Self-Test Questions
 
 1.3.1 Digital Computing: It's All about Switches
 ------------------------------------------------
-* The key to developing reliable systems is to keep the design as simple as 
+* The key to developing reliable systems is to keep the design as simple as
   possible.
 * All information within a computer system is represented using only two
   digits, 0 and 1, which known as binary representation.
@@ -137,7 +137,7 @@ Self-Test Questions
 1.3.2 The Binary Number System
 ------------------------------
 * A radix is the base used for place values of a number system.
-* The term bit stands for binary digit. 
+* The term bit stands for binary digit.
 * A byte is a group of bits operated on as a single unit in a computer system,
   usually consisting of eight bits.
 
@@ -155,7 +155,7 @@ Self-Test Questions
   Nonvolatile, long-term storage of programs and data.
 
 * Bus:
-  The circutry that transfers data between hardware components of a
+  The circuitry that transfers data between hardware components of a
   computer system.
 
 
@@ -172,7 +172,7 @@ Self-Test Questions
 
 1.3.5 Limits of Integrated Circuits Technology: Moore's Law
 ___________________________________________________________
-* Moore's Law states that the number of transistors that can be placed on a 
+* Moore's Law states that the number of transistors that can be placed on a
   single silicon chip doubles roughly every two years.
 
 Self-Test Questions
@@ -290,4 +290,3 @@ Self-Test Questions
 
 8. Two major programming paradigms in use today are ``__procedural__``
    programming and ``__object oriented__`` programming.
-
