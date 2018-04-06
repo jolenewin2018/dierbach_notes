@@ -100,18 +100,18 @@ Adding Arithmetic Operators to the Fraction Class
 
 The Representation of Classes
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-
-    |  +----------------------------------+
-    |  |  **Class Name**  {type}          | <--- {type} is optional.
-    |  +==================================+
-    |  | -instance variable: integer      | <--- [-|+]identifier:type
-    |  | +instance variable: string       |
-    |  |               ...                |
-    |  +----------------------------------+
-    |  | -method(x:int, y:str)            | <--- [-|+]identifier(identifier:type ...)
-    |  | +method()                        |
-    |  |               ...                |
-    |  +----------------------------------+
+::
+    +----------------------------------+
+    |  **Class Name**  {type}          | <--- {type} is optional.
+    +==================================+
+    | -instance variable: integer      | <--- [-|+]identifier:type
+    | +instance variable: string       |
+    |               ...                |
+    +----------------------------------+
+    | -method(x:int, y:str)            | <--- [-|+]identifier(identifier:type ...)
+    | +method()                        |
+    |               ...                |
+    +----------------------------------+
 
 * Visibility of members ... ``-`` means private, ``+`` means public.
 * Arguments within the methods parenthesis denote the return values of the
@@ -133,12 +133,13 @@ Denoting Associations Between Classes
   in which methods calls are made.
 * Here's what that might look like:
 
-    |              (multiplicity: 1 instance maps to 0 or more)
-    |  +----------------+                                 +------------------+
-    |  | GraphicsWindow |  1                        0..*  | Shape {abstract} |
-    |  |                | ------------------------------> |                  |
-    |  |                |  creates                        |                  |
-    |  +----------------+    (role name)                  +------------------+
+::
+                (multiplicity: 1 instance maps to 0 or more)
+    +----------------+                                 +------------------+
+    | GraphicsWindow |  1                        0..*  | Shape {abstract} |
+    |                | ------------------------------> |                  |
+    |                |  creates                        |                  |
+    +----------------+    (role name)                  +------------------+
 
 Denoting Subclass Relationships
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -148,20 +149,21 @@ Denoting Subclass Relationships
   found `here <https://en.wikipedia.org/wiki/Geometric_Shapes >`_. Hopefully
   they render correctly on GitHub.
 
-    |   +----------------+
-    |   | Shape          |
-    |   | {abstract}     | <-- Parent/Super Class
-    |   |                |
-    |   +----------------+
-    |           △          <-- Closed arrow head can be thought
-    |           |              of as representing "is a subclass
-    |           |              of" or "is a type of".
-    |           |
-    |   +----------------+
-    |   | Circle         |
-    |   |                |  <-- Subclass
-    |   |                |
-    |   +----------------+
+::
+    +----------------+
+    | Shape          |
+    | {abstract}     | <-- Parent/Super Class
+    |                |
+    +----------------+
+            △          <-- Closed arrow head can be thought
+            |              of as representing "is a subclass
+            |              of" or "is a type of".
+            |
+    +----------------+
+    | Circle         |
+    |                |  <-- Subclass
+    |                |
+    +----------------+
 
 Denoting Composition vs. Aggregation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -172,26 +174,27 @@ Denoting Composition vs. Aggregation
   filled diamond arrow head. It answers the question: What is the parent class
   composed of?
 
-    |      Aggregation            Composition
-    |   +-----------------+   +-----------------+
-    |   | ShapeCollection |   | Shape           |
-    |   |                 |   |                 |
-    |   |                 |   |                 |
-    |   +-----------------+   +-----------------+
-    |           ◇                      ◆
-    |           |                      |
-    |           |                      |
-    |           | 0..*                 | 1
-    |   +-----------------+   +-----------------+
-    |   | Shape           |   | XYCoord         |
-    |   |                 |   |                 |
-    |   |                 |   |                 |
-    |   +-----------------+   +-----------------+
-    |      Zero or more           One instance
-    |      instances of            of XYCoord
-    |    Shape are grouped       is an intergral
-    |       together in           part of Shape
-    |     ShapeCollection
+::
+       Aggregation            Composition
+    +-----------------+   +-----------------+
+    | ShapeCollection |   | Shape           |
+    |                 |   |                 |
+    |                 |   |                 |
+    +-----------------+   +-----------------+
+            ◇                      ◆
+            |                      |
+            |                      |
+            | 0..*                 | 1
+    +-----------------+   +-----------------+
+    | Shape           |   | XYCoord         |
+    |                 |   |                 |
+    |                 |   |                 |
+    +-----------------+   +-----------------+
+       Zero or more           One instance
+       instances of            of XYCoord
+     Shape are grouped       is an intergral
+        together in           part of Shape
+      ShapeCollection
 
 An Example Class Diagram
 ^^^^^^^^^^^^^^^^^^^^^^^^
