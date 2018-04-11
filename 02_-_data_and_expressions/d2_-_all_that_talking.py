@@ -5,7 +5,7 @@
 # information as given in Figure 2-1.
 #
 # The download speed is to be entered by the user in million of bits per second
-# (mbps). (One of the only units not in the chart!) To find your actual
+# (mbps). (One of the only units not in the chart, arrgh!) To find your actual
 # connection speed, go to the following website (from Intel Corporation) or
 # similar site,
 #
@@ -18,17 +18,18 @@
 
 """
 Input:
-    * File size to download
-    * The approximate throughput of the machine's connection from a speedtest
-        site. Unit/Second.
-    * Size of all words ever spoken
-    +---------------+---------+-------------------------------------+----------------------------------------------------+↲
-    |   Exabyte     | 10**18  |    1,000,000,000,000,000,000        |    All words ever spoken (5EB)                     |↲
-    |   Exbibyte    |  2**60  |    1,152,921,504,606,849,976        |                                                    |↲
-    +---------------+---------+-------------------------------------+----------------------------------------------------+↲
+    * Size of a file to download
+    * Approximate throughput from speedtest
+    * Size of all words ever spoken, ``all_words = 2**60 # 5EB``
 Processing:
->>>
+    * Check if there is an internet connection by pinging 1.1.1.1
+    * If so, use ``speedtest-cli`` or an api to measure the throughput of the
+      connection
+    * Using that measurement, compute how long it will take to download the
+      file by dividing the file size by the connection speed
 Output:
     * The amount of time it will take to download the file on the machines
-        connection.
+      connection.
 """
+
+
