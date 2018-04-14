@@ -10,20 +10,25 @@ Fundamental Concepts
 
 3.1 What Is a Control Structure?
 --------------------------------
-* Control flow is the order that instructions in are executed in a program.
-* A control statement is a statement that determines the control flow of a set
-  of instructions. 
-* A control structure is a set of instructions and the control statements
+* **Control flow** is the order that instructions in are executed in a program.
+* A **control statement** is a statement that determines the control flow of a set
+  of instructions.
+* A **control structure** is a set of instructions and the control statements
   controlling their execution.
-* The Python language reference categorizes these as compound statements.
 * Three fundamental forms of control in programming are sequential, selection,
   and iterative control.
+  * **Sequential control** is an implicit form of control in which instructions
+    are executed in the order they're written.
+  * **Selection control** is provided by a control statement that selectively
+    executes instructions based on a condition.
+  * **Iterative control** is provided by a control statement that repeatedly
+    executes instructions based on a condition.
 
 
 3.2 Boolean Expressions (Conditions)
 ------------------------------------
-* The Boolean data type contains two Boolean values, denoted as True and False
-  in Python.
+* The Boolean data type contains two Boolean values, denoted as ``True`` and
+  ``False`` in Python.
 * A Boolean expression is an expression that evaluates to a Boolean value.
 
 
@@ -31,18 +36,117 @@ Fundamental Concepts
 --------------------------
 * The relational operators ``==``, ``!=``, ``<``, ``>``, ``<=``, ``>=`` can be
   applied to any set of values that has an ordering.
-* Strings are compared based on the lexographical odering of their member
-  characters, which is derived from the characters respective values (unicode
-  code points).
+* Strings are compared based on the lexicographical ordering of their member
+  characters, which is derived from each characters respective Unicode code
+  point.
 
 
 3.2.2 Membership Operators
 --------------------------
 * Python provides membership operators ``in`` and ``not it`` for determining if
-  a  specific value is in (or not in) a given list of values (or any
-  collection, really).
+  a specific value is in (or not in) a given list of values (or any collection,
+  really).
 
 
-3.2.2 Boolean Opertors
+3.2.3 Boolean Operators
+-----------------------
+* Boolean operators in Python are denoted by ``and``, ``or``, and ``not``.
+
+
+3.2.4 Operator Precedence and Boolean Expressions
+-------------------------------------------------
+* Arithmetic operators are performed before Boolean operators, which are
+  performed before relational operators.
+
+
+3.2.5 Short-Circuit (Lazy) Evaluation
+-------------------------------------
+* In short-circuit (lazy) evaluation, the second operand of Boolean operators
+  ``and`` and ``or`` is not evaluated if the value of the Boolean expression
+  can be determined from the first operand alone.
+
+
+3.2.6 Logically Equivalent Boolean Expressions
+----------------------------------------------
+* There are logically equivalent Boolean expressions of different form.
+* `De Morgan's Laws <https://brilliant.org/wiki/de-morgans-laws/>`_:
+  * Not (A and B) is the same as Not A or Not B.
+  * Not (A or B) is the same as Not A and Not B.
+
+Self-Test Questions
+^^^^^^^^^^^^^^^^^^^
+1. Three forms of control in programming are sequential, selection and
+   ``__iterative__`` control.
+
+2. Which of the following expressions evaluate to True?
+
+    **a.**  ``10 >= 8 ``
+    **b.**  ``8 <= 10 ``
+    c.      ``10 == 8 ``
+    **d.**  ``10 != 8``
+    e.      ``'8' < '10'``
+
+3. Which of the following Boolean expressions evaluate to True?
+
+    **a.**  ``'Dave' < 'Ed' ``
+    b.      ``'dave' < 'Ed' ``
+    c.      ``'Dave' < 'Dale'``
+
+4. What is the value of variable num after the following is executed?
+
+   ::
+
+        num = 10
+        num = num + 5
+        num == 20
+        num = num + 1
+
+    * ``num`` would point to 16.
+
+5. What does the following expression evaluate to for name equal to 'Ann'?
+
+   ::
+
+       name in ('Jacob', 'MaryAnn', 'Thomas')
+
+    * ``False``.
+
+6. Evaluate the following Boolean expressions using the operator precedence rules of Python.
+
+    a. ``10 >= 8 and 5 != 3 ``              ==> True
+    b. ``10 >= 8 and 5 == 3 or 14 < 5``     ==> False
+
+7. Which one of the following Boolean expressions is not logically equivalent to the other two?
+
+    a.      ``not(num < 0 or num > 10)``
+    **b.**  ``num > 0 and num < 10``
+    c.      ``num >= 0 and num <= 10``
+
+
+3.3 Selection Control
+---------------------
+* A selection control statement is a control statement providing selective
+  execution of instructions.
+
+
+3.3.1 ``if`` Statement
 ----------------------
+* An ``if`` statement is a selection control statement based on the value of a
+  given Boolean expression. 
+* Statements that contain other statements are referred to as a compound
+  statement.
+
+
+3.3.2 Indentation in Python
+---------------------------
+* A header in  Python starts with a keyword and ends with a colon. The group of
+  statements following a header is called a suite. A header and its associated
+  suite together are referred to as a clause.
+
+
+3.3.3 Multi-Way Selection
+-------------------------
+* ``if`` statements may contain any number of ``elif`` headers, providing for
+  multi-way selection.
+
 
