@@ -21,15 +21,17 @@ Input:
     * Size of a file to download
     * Approximate throughput from speedtest
     * Size of all words ever spoken, ``all_words = 2**60 # 5EB``
+
 Processing:
     * Check if there is an internet connection by pinging 1.1.1.1
     * If so, use ``speedtest-cli`` or an api to measure the throughput of the
       connection
     * Using that measurement, compute how long it will take to download the
       file by dividing the file size by the connection speed
+
 Output:
     * The amount of time it will take to download the file on the machines
       connection.
-"""
 
+"""
 
