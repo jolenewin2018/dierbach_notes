@@ -150,3 +150,56 @@ Self-Test Questions
   multi-way selection.
 
 
+3.3.4 Let's Apply It -- Number of Days in Month Program
+-------------------------------------------------------
+* Logic to determine if a year is a leap year: ``year % 4 == 0 and year % 100 != 0 or year % 400 == 0``.
+
+Self-Test Questions
+^^^^^^^^^^^^^^^^^^^
+1. All ``if`` statements must contain either an ``else`` or ``elif`` header.
+
+   TRUE/**FALSE**
+
+2. A compound statement is,
+
+   a.      A statement that spans more than one line.
+   **b.**  A statement that contains other statements.
+   c.      A statement the contains at least one arithmetic expressions.
+
+3. Which of the following statements are true regarding headers in Python?
+   **a.**  Headers begin with a keyword and end with a colon.
+   b.      Headers always occur in pairs.
+   **c.**  All headers of the same compound statement must be indented the same
+           amount.
+
+4. Which of the following statements is true?
+   a.      Statements within a suite can be indented a different amount.
+   b.      Statements within a suite can be indented a different amount as long as
+           all headers in the statement that it occurs in are indented the same
+           amount.
+   **c.**  All headers must be indented the same amount as all others headers
+           in the same statement, and all statements in a given suite must be
+           indented the same amount.
+
+5. The ``elif`` header allows for,
+   a.      Multi-way selection that cannot be accomplished otherwise.
+   **b.**  Multi-way selection as a single if statement.
+   c.      The use of a "catch-all" case in multi-way selection.
+
+
+3.4 Iterative Control
+---------------------
+* An iterative control statement is a control statement that allows for the
+  repeated execution of a set of statements.
+ 
+
+3.4.1 While Statement
+---------------------
+* A ``while`` statement is an iterative control statement the repeatedly executes
+  a set of statements based on a Boolean expression. As long as the boolean
+  expression evaluates to True, the statements are executed.
+
+
+3.4.2 Input Error Checking
+--------------------------
+
