@@ -136,7 +136,7 @@ Self-Test Questions
 
 1.3.2 The Binary Number System
 ------------------------------
-* A radix is the base used for place values of a number system.
+* A radix is the base used for the place values of a number system.
 * The term bit stands for binary digit.
 * A byte is a group of bits operated on as a single unit in a computer system,
   usually consisting of eight bits.

@@ -80,6 +80,31 @@ Adding Arithmetic Operators to the Fraction Class
   special here, but check out Figure 10-8 if you want.
 
 
+10.3 Inheritance
+----------------
+
+
+10.2.1 What Is Inheritance?
+---------------------------
+* Inheritance is object-oriented programming is the ability of a subclass (also
+  "derived class" or "child class") to inherit members of a superclass (also
+  "base class" or "parent class" or "ancestor class") as part of its own
+  definition.
+
+
+10.3.2 Subtypes
+---------------
+* A subtype is something that can be substituted for and behave as its parent
+  type (and *its* parent type, etc.).
+
+
+10.3.3 Defining Subclasses in Python
+------------------------------------
+
+Class Names of the Built-In Types in Python
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+
 10.5 Object-Oriented Design Using UML
 -------------------------------------
 

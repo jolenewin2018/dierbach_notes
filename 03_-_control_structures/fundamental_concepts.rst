@@ -202,4 +202,27 @@ Self-Test Questions
 
 3.4.2 Input Error Checking
 --------------------------
+* The ``while`` statement is well suited for input error checking.
+
+
+3.4.3 Infinite Loops
+--------------------
+* An infinite loop is an iterative control structure that never terminates (or
+  eventually terminates with a system error).
+
+
+3.4.4 Definite vs Indefinite Loops
+----------------------------------
+* A definite loop is a loop where the number of iterations is known beforehand.
+  Indefinite loops may iterate any number of times, or not at all.
+
+
+3.4.5 Boolean Flags and Indefinite Loops
+----------------------------------------
+* A single Boolean variable used as the condition of a given control statement
+  is called a Boolean flag.
+
+
+3.4.6 Let's Apply It - Coin Change Exercise Program
+---------------------------------------------------
 
